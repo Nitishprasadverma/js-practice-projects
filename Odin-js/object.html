@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-js</title>
+</head>
+
+<body>
+
+
+    <script>
+        //    creating an object
+
+        //   let user  = {name:"nitish",
+        // age:19};
+
+        // alert(user.name);
+        // alert(user.age);
+
+        // // deleting the key;
+        // delete  user.name;
+
+        //     let user = {
+        //         name: "Nitish", age: 19,
+        //         "likes bird": true
+        //     }
+        //     alert(user["likes bird"]);
+        //     delete user["likes bird"];
+        //     // now it will give an error undefined;
+
+        //     //    alert(user["likes bird"]);
+
+
+        //     let key = "likes birds";
+        //     user[key] = true;
+        //     alert(user["likes birds"])
+
+        //   let user = {
+        //     name: "Nitish", age:19
+        //   };
+        //   let key = prompt("what do you want to know about the user?", "age");
+        //   alert(user[key]);
+
+        //   key = "name";
+        //   alert(user.key); //undefined
+
+
+        //       let fruit = prompt("Which fruit to buy?", "apple");
+
+        // let bag = {
+        //   [fruit]: 5, // the name of the property is taken from the variable fruit
+        // };
+
+        // alert( bag.apple ); // 5 if fruit="apple"
+
+
+        // let fruit = 'apple';
+        // let bag = {
+        //     [fruit + 'Computers']: 5 // bag.appleComputers = 5
+        // };
+
+        // alert(bag.appleComputers)
+
+
+        // function makeUser(name, age) {
+        //     return {
+        //         name: name,
+        //         age: age,
+
+        //     };
+        // }
+        // let user = makeUser( "Nitish", 19);
+        // alert(user.age)
+
+
+
+        // // properties are all right
+        // let obj = {
+        //     for:  1,
+        //     let: 2,
+        //     return: 3
+        // };
+        // alert( obj.for + obj.let + obj.return);
+
+        // // properties existence test "in" operator
+
+        // let users = {};
+
+        // alert(users.noSuchPorperty === undefined);// true means no such properties exist;
+
+        // in operator to cheeck wether a gieven property esxist or not;
+
+        // syntax :->
+
+        //"key" in object;
+
+        //  eg:-
+
+        // let nitish = { name:"abhimanyu", age: 20};
+
+        // alert("age" in nitish); // return true;
+
+        // alert("blabla" in nitish); // return false bcz blabla doesn't exist;
+
+
+// let fruits = {
+//     apple: "10kg",
+//     Banana: 12,
+//     Graps: "2kg",
+//     Guva: 10
+// };
+
+
+// // for( let key (key variable) in (keyword) fruits (object)
+// for(let gya in fruits){
+//     alert(gya); // accessing the key only
+//     alert(fruits[gya]); //accessing the value of the keys.
+
+// }
+
+// let codes = {
+//   "49": "Germany",
+//   "41": "Switzerland",
+//   "44": "Great Britain",
+//   // ..,
+//   "1": "USA"
+// };
+
+// for (let code in codes) {
+//   alert(code); // 1, 41, 44, 49
+//   alert(codes[code])
+// }
+
+
+// let countries = {
+//     "+49": "Germany",
+//     "+41": "Sswiterland",
+//     "+44": "Great Britain",
+//     "+91": "India"
+// };
+
+// for( let country in countries){
+//     alert(country)
+// }
+
+
+
+// let schedule ={};
+// alert(isEmpty(schedule));
+
+// schedule["8:30"] = "Get up";
+// alert(isEmpty(schedule));
+
+// function isEmpty(obj){
+//     for(let key in obj){
+//         return false;
+//     }
+//     return true;
+// }
+
+
+let salaries = {
+    nitish: 100,
+    manu:300,
+    hwo:200
+};
+
+let sum = 0;
+
+for(let key in salaries){
+    sum += salaries[key]
+}
+alert(sum);
+
+let menu = {
+    width: 200,
+    height: 300,
+    title: "my menu"
+};
+function multiplyNumeric(obj){
+    for( let key in obj){
+        if(typeof obj[key] === "number"){
+            obj[key] *= 2;
+        }
+    }
+}
+multiplyNumeric(menu);
+alert(menu.height);
+    </script>
+</body>
+
+</html>

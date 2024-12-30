@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let message = "hello"
+        // alert(message);
+
+        // let hello ="Hello world"
+        // let message;
+        // message = hello;
+
+        // Now two variable hold the same data
+
+        // alert(hello);
+        // alert(message);
+        // let $ = 1;
+        // let _ = 2;
+        // // alert($ + _)
+
+
+        // num = 5;
+        // alert(num);
+
+        // const myBirthday = '18.04.2004';
+
+
+        // const COLOR_RED ="#f00";
+        // const COLOR_GREEN = "#0f0";
+        // const COLOR_BLUE = "#00f";
+        // const COLOR_ORANGE = "#ff7f00"
+        // let color = COLOR_BLUE;
+        // alert(color)
+
+
+        // let admin , name;
+        // name = 'John'
+        // admin = name;
+        // alert(admin);
+
+        // let earth;
+        // let currentVisitor;
+        // const birthday ='19-02-2005';
+        // const age = someCode();
+        // let BIRTHDAY = '19-02-2005'
+        // let AGE = '19'
+
+
+        //     let x = 1;
+        // alert( +x ); // 1
+
+        // let y = -2;
+        // alert( +y ); // -2
+
+        // Converts non-numbers
+        // alert( +true ); // 1
+        // alert( +"" );   // 0
+
+        // let apples = "2";
+        // let oranges = "3";
+
+        // alert( apples + oranges ); 
+
+
+
+        // if(-1 || 0) alert('first');
+        // if(-1 && 0) alert('second');
+        // if(null || -1 && 1) alert('third');
+
+        // let userName;
+        // userName = prompt('Who are you?', '');
+        // if (userName === 'Admin') {
+        //     let pass = prompt("Password?? ", '');
+        //     if (pass === 'TheMaster') {
+        //         alert('Welcome !')
+        //     }
+        //     else if (pass === '' || pass === null) {
+        //         alert('cancled');
+        //     }
+        //     else {
+        //         alert('Wrong Password');
+        //     }
+
+        // }
+
+        // else if (userName === '' || userName === null) {
+        //     alert('Cancled');
+        // }
+        // else {
+        //     alert("Sorry i don't know you !")
+        // }
+// let age = prompt("What is your age?", 18);
+
+// let welcome;
+
+// if (age < 18) {
+
+//   welcome = function() {
+//     alert("Hello!");
+//   };
+
+// } else {
+
+//   welcome = function() {
+//     alert("Greetings!");
+//   };
+
+// }
+
+// welcome();
+
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes();
+//   else no();
+// }
+
+// ask(
+//     "Do you agree?",
+//     () =>alert("your agreed!"),() =>alert("you cancled"))
+
+
+let n = +prompt("Enter a number:")
+
+for(i = 1; i<n; i++){
+
+    if(i%3 === 0 && i%5 === 0){
+        console.log("fizzbuzz");
+    }
+
+    else if(i%3 === 0){
+        console.log("fizz");
+    }
+    else if(i%5 ===0){
+        console.log("buzz");
+    }
+    else{
+        console.log(i);
+    }
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching-contact</title>
+</head>
+
+<body>
+
+
+    <label for="number">Enter number:</label>
+
+
+    <input id="number" type="number" />
+    <button>Generate Integer Square</button>
+    <p>Output:</p>
+
+    <!-- <label for="search">Search by contact name:</label>
+ <input id="search" type="text">
+    <button>Search</button>
+    <p></p> -->
+    <!-- 
+    <script>
+
+        const contacs = [
+            "Nitish:7492030870",
+            "Niranjan:7654811691",
+            "Abhimanyu:629909288",
+            "Mummy:8797335301",
+            "Papa:8826434730",
+            "piyush:5462875623",
+        ]
+
+
+        const para = document.querySelector("p");
+        const input = document.querySelector("input");
+        const btn = document.querySelector("button");
+
+    function searchContact(){
+        const searchName = input.value.toLowerCase();
+
+        input.value = "";
+        input.focus();
+
+        para.textContent = "";
+        for(const contact of contacs ){
+            const splitContact = contact.split(":");
+
+            if(splitContact[0].toLowerCase() === searchName){
+                para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+                // break;
+            }
+        }
+
+        if(para.textContent === ""){
+            para.textContent = "Contact not found!";
+        }
+
+
+    }
+
+    btn.addEventListener("click", searchContact);
+
+       
+    </script> -->
+
+
+    <script>
+
+        const para = document.querySelector("p")
+        const input = document.querySelector("input")
+        const btn = document.querySelector("button")
+
+
+        btn.addEventListener("click", () => {
+            para.textContent = "output:"
+
+            const num = input.value;
+            input.value = "";
+            input.focus();
+            for (let i = 1; i < num; i++) {
+                const sqRoot = Math.sqrt(i);
+                if (Math.floor(sqRoot) !== sqRoot) {
+                    continue;
+                }
+
+                para.textContent += `${i}  `;
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- <button>Press me</button>
+    <div id="greeting"></div>
+    <div id="btn"></div> 
+
+    <h1>Javascipt Strings</h1>
+    <h2>The slice() method</h2>
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo"></p> -->
+
+    <button id="calculate">Calculate</button>
+
+    <button id="reset">Reset</button>
+    <p id="results"></p>
+    <script>
+
+
+        // const button = document.querySelector("button")
+
+        // function greeting() {
+        //     const name = prompt("What is your name?")
+        //     const greeting = document.
+        //         querySelector("#greeting");
+
+        //     greeting.textContent = `Hello ${name}, nice to see you!`
+        // }
+
+        // button.addEventListener("click", greeting,)
+        // let text = "Apple, Banana, Kiwi";
+        // // let part = text.slice(7,13);
+        // // let part = text.slice(-12);
+        // let part = text.slice(-12, -6);
+        // document.getElementById("demo").innerHTML = part;
+
+        const results = document.querySelector("#results");
+        function calculate() {
+            for (let i = 1; i < 10; i++) {
+                const newResult = `${i} * ${i} = ${i * i}`;
+                results.textContent += `${newResult}\n`;
+            }
+            results.textContent += "\nfinished !\n\n "
+        }
+
+        const calculateBtn = document.querySelector("#calculate");
+        const clearBtn = document.querySelector("#reset");
+
+
+        calculateBtn.addEventListener("click", calculate);
+        clearBtn.addEventListener("click", () => (results.textContent = ""));
+
+    </script>
+</body>
+
+</html>

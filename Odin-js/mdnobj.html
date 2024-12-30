@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDN-Object</title>
+</head>
+<body>
+    
+
+
+    <script>
+//         const person = { name: {
+//             firstName: "Bob",
+//             lastName: "Smith"
+
+//         },
+        
+//     age:32,
+
+// //     bio: function(){
+// //     console.log(`${this.name.firstName} ${this.name.lastName} is ${this.age} years old`);
+    
+// // },
+
+// bio(){
+//     console.log(`${this.name.firstName} ${this.name.lastName} is ${this.age} years old`);
+    
+// }, // same as above
+
+// // introduceSelf: function(){
+// //     console.log(`Hi i'm ${this.name[0]}.`);
+// // }
+// // };
+
+// introduceSelf(){
+//     console.log(`Hi i'm ${this.name[0]}.`); 
+// }
+// }
+
+const person = {
+    name: ["bob", "smith"],
+    age: 43,
+    
+};
+
+const myDataName = "height";
+const myDataValue = "1.75m";
+person[myDataName] = myDataValue;
+
+
+function logProPerty(properyName){
+    console.log(person[properyName]);
+}
+logProPerty("name");
+logProPerty("age");
+
+person.age = 56;
+person["name"]["last"] = "verma";
+
+person["eyes"] = "blue";
+person.farewell = function(){
+    console.log("bye everybody");
+}
+// const myDataName = nameInput.value;
+// const myDataValue = nameValue.value;
+
+// person[myDataName] = myDataValue;
+
+function createPerson(name){
+    const obj = {};
+    obj.name = name;
+    obj.introduceSelf = function(){
+        console.log(`Hi! i'm ${this.name}.`);
+    };
+    return obj;
+
+}
+
+const manu = createPerson("manu");
+
+const Nitish = createPerson("Nitish");
+
+function person(name){
+    this.name = name;
+    this.introduceSelf = function(){
+        console.log(`Hi i'm ${this.name}`);
+    };
+}
+
+// call person as a cunstructor we use new keyword
+
+const gya = new person("gya");
+gya.introduceSelf();
+
+
+
+    </script>
+</body>
+</html>
