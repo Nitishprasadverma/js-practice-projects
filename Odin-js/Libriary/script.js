@@ -74,10 +74,10 @@ function displayBooks() {
 
 
 }
-addBookToLibriary('The Hobbit', 'J.R.R. Tolkien', 295, 'no');
-addBookToLibriary('The Lord of the Rings', 'J.R.R. Tolkien', 1178, 'yes');
-addBookToLibriary('The Silmarillion', 'J.R.R. Tolkien', 365, 'no');
-displayBooks();
+// addBookToLibriary('The Hobbit', 'J.R.R. Tolkien', 295, 'no');
+// addBookToLibriary('The Lord of the Rings', 'J.R.R. Tolkien', 1178, 'yes');
+// addBookToLibriary('The Silmarillion', 'J.R.R. Tolkien', 365, 'no');
+// displayBooks();
 
 
 
