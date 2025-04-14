@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWSkills Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>PWSkills Blog </h1>
+        <button id="add-btn">+</button>
+    </header>
+
+    <main>
+        <div class="blog-container" id="blog-container">
+            
+        </div>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <input type="text" id="blog-url" placeholder="Enter Blog Post URL">
+            <input type="text" id="blog-title" placeholder="Enter Blog Title :">
+            <input type="text" id="blog-description" placeholder="Enter Blog Description">
+            <textarea id="blog-content" placeholder="Write..."></textarea>
+            <button id="submit-blog">Add Blog</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
