@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #06021c
+    ;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+
+}
+header h1{
+    color: #ffff;
+font-weight: bold;
+}
+
+header input{
+    padding: 10px;
+    /* width: 00px; */
+    width: 40%;
+}
+/* CSS */
+
+#movie-container{
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   gap: 20px;
+    margin: 20px 20px 0px 20px;
+}
+.movie-card {
+    background-color: #1e1b4b;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .movie-card button {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .movie-card button:hover {
+    background-color: #ff3385;
+  }
+  
